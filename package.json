@@ -8,6 +8,7 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "coffee-script": "^1.8.0",
     "hubot": "^2.11.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.1.2",
