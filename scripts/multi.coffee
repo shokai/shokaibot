@@ -11,4 +11,4 @@ module.exports = (robot) ->
     count = msg.match[1] - 0
     word = msg.match[2].trim()
     for i in [0...count]
-      msg.send word
+      msg.send "#{word} (i)"
