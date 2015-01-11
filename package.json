@@ -4,6 +4,9 @@
   "private": true,
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "description": "A simple helpful robot for your Company",
+  "scripts": {
+    "test": "grunt test"
+  },
   "dependencies": {
     "hubot": "^2.11.0",
     "hubot-diagnostics": "0.0.1",
@@ -19,6 +22,19 @@
     "hubot-shipit": "^0.1.1",
     "hubot-slack": "^3.2.1",
     "hubot-youtube": "^0.1.2"
+  },
+  "devDependencies": {
+    "coffeelint": "*",
+    "coffee-errors": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-coffeelint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-notify": "*",
+    "grunt-jsonlint": "*",
+    "grunt-simple-mocha": "*",
+    "mocha": "*",
+    "supertest": "*"
   },
   "engines": {
     "node": "0.10.x"
