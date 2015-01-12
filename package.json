@@ -21,11 +21,11 @@
     "hubot-heroku-keepalive": "0.0.4",
     "hubot-maps": "0.0.1",
     "hubot-pugme": "^0.1.0",
-    "hubot-rss-reader": "git://github.com/shokai/hubot-rss-reader.git#develop",
+    "hubot-rss-reader": "^0.6.4",
     "hubot-rules": "^0.1.0",
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.1.1",
-    "hubot-slack": "git://github.com/shokai/hubot-slack.git#error_tostring",
+    "hubot-slack": "^3.2.1",
     "hubot-youtube": "^0.1.2",
     "lodash": "^2.4.1"
   },
