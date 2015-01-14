@@ -1,5 +1,7 @@
 # shokaibot
 
+[![Build Status](https://travis-ci.org/shokai/shokaibot.svg?branch=master)](https://travis-ci.org/shokai/shokaibot)
+
 ## Install Dependencies
 
     % npm install
