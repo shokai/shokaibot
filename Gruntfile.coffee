@@ -14,6 +14,7 @@ module.exports = (grunt) ->
   grunt.registerTask 'default', [ 'test', 'watch' ]
 
   grunt.initConfig
+    pkg: grunt.file.readJSON 'package.json'
 
     jsonlint:
       config:
