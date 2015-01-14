@@ -4,3 +4,6 @@ node_js:
 notifications:
   slack:
     secure: UdIygyh+Hhal0gKaEOpDLmdDBAo9dlQtdqVJC0vnqBa0//a989vQ2F1e3y8SSz1XxR1b/tfJcGVJg5SOru/z1fYpN7jYTPyUSuQPN/q5z2pGgvrn0JuP+uh+XDQ/WuGSXNJfFE7SFa5YhJurHTe+buEDABEPHC+NVLsqtoKxgo4=
+deploy:
+  api_key:
+    secure: kk3M7rs0DP+JCp1NjrGA73bIQP/S/ltdikyTiO4Jm85RsTkRbCWJnqFskNN+RsNi5Yq+2maMM5R7Vh+90XoJl9RwGZU554NGgENxnne3l+kKKz+PEhgetfGBJCosC6c0f13u4usmAHL4NP+zovmtwia+xuG4jf8LUmUcxGKPoU4=
