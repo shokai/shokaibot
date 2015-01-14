@@ -1,6 +1,7 @@
 [
   "hubot-brain-redis-hash",
   "hubot-rss-reader",
+  "hubot-anonymous-post",
   "hubot-diagnostics",
   "hubot-help",
   "hubot-heroku-keepalive",
