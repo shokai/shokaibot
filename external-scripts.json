@@ -1,6 +1,8 @@
 [
   "hubot-brain-redis-hash",
   "hubot-rss-reader",
+  "hubot-sfc-bus",
+  "hubot-gohan",
   "hubot-anonymous-post",
   "hubot-diagnostics",
   "hubot-help",
