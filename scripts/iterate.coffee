@@ -4,7 +4,8 @@
 # Author:
 #   @shokai
 
-_ = require 'lodash'
+_     = require 'lodash'
+async = require 'async'
 
 module.exports = (robot) ->
 
@@ -25,8 +26,7 @@ module.exports = (robot) ->
     iterate_send str,msg.room, first, last
 
   iterate_send = (str, to, first, last) ->
-    for i in [first..last]
-      do (i)->
-        compiled = _.template(str)
-          i: i
-        robot.send {room: to}, "#{compiled}"
+    async.mapSeries [first..last], (i, next) ->
+      compiled = _.template(str) {i: i}
+      robot.send {room: to}, "#{compiled}"
+      setTimeout next, 300
