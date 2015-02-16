@@ -26,7 +26,7 @@ module.exports = (robot) ->
     iterate_send str,msg.room, first, last
 
   iterate_send = (str, to, first, last) ->
-    async.mapSeries [first..last], (i, next) ->
+    async.eachSeries [first..last], (i, next) ->
       compiled = _.template(str) {i: i}
       robot.send {room: to}, "#{compiled}"
       setTimeout next, 300
