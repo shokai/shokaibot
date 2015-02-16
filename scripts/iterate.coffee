@@ -12,7 +12,7 @@ module.exports = (robot) ->
   robot.respond /iterate\s+(\d+)\s+(.+)$/i, (msg) ->
     count = msg.match[1] - 0
     str = msg.match[2].trim()
-    iterate_send str, msg.room, 1, count
+    iterate_send str, msg, 1, count
 
   robot.respond /iterate\s+(\d+)(\.{2,3})(\d+)\s+(.+)$/i, (msg) ->
     first = msg.match[1] - 0
@@ -23,10 +23,10 @@ module.exports = (robot) ->
       else if first > last
         last += 1
     str = msg.match[4].trim()
-    iterate_send str,msg.room, first, last
+    iterate_send str, msg, first, last
 
-  iterate_send = (str, to, first, last) ->
+  iterate_send = (str, msg, first, last) ->
     async.eachSeries [first..last], (i, next) ->
       compiled = _.template(str) {i: i}
-      robot.send {room: to}, "#{compiled}"
+      msg.send "#{compiled}"
       setTimeout next, 300
