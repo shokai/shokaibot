@@ -23,7 +23,7 @@
     "hubot-heroku-keepalive": "0.0.4",
     "hubot-maps": "0.0.1",
     "hubot-pugme": "^0.1.0",
-    "hubot-rss-reader": "^0.6.4",
+    "hubot-rss-reader": "git://github.com/shokai/hubot-rss-reader.git#31_cache_brain",
     "hubot-rules": "^0.1.0",
     "hubot-scripts": "^2.5.16",
     "hubot-sfc-bus": "^0.1.4",
