@@ -6,3 +6,6 @@ deployment:
     branch: master
     heroku:
       appname: ahokai
+notify:
+  webhooks:
+    - url: https://masuilab-hubot2.herokuapp.com/circleci-webhook?room=shookai
