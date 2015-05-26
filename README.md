@@ -1,6 +1,6 @@
 # shokaibot
 
-[![Build Status](https://travis-ci.org/shokai/shokaibot.svg?branch=master)](https://travis-ci.org/shokai/shokaibot)
+[![Circle CI](https://circleci.com/gh/shokai/shokaibot.svg?style=svg)](https://circleci.com/gh/shokai/shokaibot)
 
 ## Install Dependencies
 
