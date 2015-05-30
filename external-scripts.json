@@ -1,5 +1,5 @@
 [
-  "hubot-brain-redis-hash",
+  "hubot-mongodb-brain",
   "hubot-rss-reader",
   "hubot-sfc-bus",
   "hubot-gohan",
