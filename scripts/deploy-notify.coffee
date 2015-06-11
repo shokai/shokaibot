@@ -9,7 +9,10 @@ module.exports = (robot) ->
 
   cid = setInterval ->
     return if typeof robot?.send isnt 'function'
-    robot.send {room: "shokai"}, "Hubot、起動しました"
+    robot.send {room: "shokai"}, "ガバリ"
     clearInterval cid
   , 1000
 
+  for signal in ['SIGTERM', 'SIGINT']
+    process.on signal, ->
+      robot.send {room: "shokai"}, 'スヤリ'
