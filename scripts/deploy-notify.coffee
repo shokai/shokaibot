@@ -16,3 +16,4 @@ module.exports = (robot) ->
   for signal in ['SIGTERM', 'SIGINT']
     process.on signal, ->
       robot.send {room: "shokai"}, 'スヤリ'
+      setTimeout process.exit, 1000
