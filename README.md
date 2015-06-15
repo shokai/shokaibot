@@ -28,6 +28,8 @@
 
     % heroku config:set HUBOT_HEROKU_KEEPALIVE_URL=http://(app_name).herokuapp.com
     % heroku config:set NODE_ENV=production
-    % heroku config:add TZ=Asia/Tokyo
-    % heroku addons:add redistogo:nano
+    % heroku config:set TZ=Asia/Tokyo
     % heroku config:set 'DEBUG=*'
+
+    % heroku addons:create mongolab
+    % heroku addons:create process-scheduler
