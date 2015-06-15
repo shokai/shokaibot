@@ -13,7 +13,11 @@ module.exports = (robot) ->
     clearInterval cid
   , 1000
 
-  for signal in ['SIGTERM', 'SIGINT']
-    process.on signal, ->
-      robot.send {room: "shokai"}, 'スヤリ'
-      setTimeout process.exit, 1000
+  on_sigterm = ->
+    robot.send {room: "shokai"}, 'スヤリ'
+    setTimeout process.exit, 1000
+
+  if process._events.SIGTERM?
+    process._events.SIGTERM = on_sigterm
+  else
+    process.on 'SIGTERM', on_sigterm
