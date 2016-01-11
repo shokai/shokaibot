@@ -9,8 +9,8 @@
     "start": "bin/hubot"
   },
   "dependencies": {
-    "async": "^0.9.0",
-    "coffee-script": "^1.8.0",
+    "async": "^1.5.2",
+    "coffee-script": "^1.10.0",
     "debug": "^2.1.1",
     "hubot": "^2.12.0",
     "hubot-anonymous-post": "0.0.3",
@@ -23,7 +23,7 @@
     "hubot-maps": "0.0.1",
     "hubot-mongodb-brain": "^0.1.0",
     "hubot-pugme": "^0.1.0",
-    "hubot-rss-reader": "0.6.9",
+    "hubot-rss-reader": "0.8.2",
     "hubot-rules": "^0.1.0",
     "hubot-scripts": "^2.5.16",
     "hubot-sfc-bus": "^0.1.4",
